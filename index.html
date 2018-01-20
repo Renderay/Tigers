@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="ru">
 <head>
 	<title>Tigernu | Laptop backpacks</title>
 	<meta charset="UTF-8" />
@@ -48,7 +48,7 @@ img.emoji {
 <script type='text/javascript' src='wp-content/themes/uberstore-wp/assets/js/modernizr.foundation.js'></script>
 <link rel='https://api.w.org/' href='http://www.tigernu.net/wp-json/' />
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.tigernu.net/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.tigernu.net/wp-includes/wlwmanifest.xml" /> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.tigernu.net/wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 4.9.2" />
 <meta name="generator" content="WooCommerce 3.2.6" />
 <link rel="canonical" href="http://www.tigernu.net/" />
@@ -59,23 +59,23 @@ img.emoji {
 			jQuery(document).ready(function() {
 				// CUSTOM AJAX CONTENT LOADING FUNCTION
 				var ajaxRevslider = function(obj) {
-				
+
 					// obj.type : Post Type
 					// obj.id : ID of Content to Load
 					// obj.aspectratio : The Aspect Ratio of the Container / Media
 					// obj.selector : The Container Selector where the Content of Ajax will be injected. It is done via the Essential Grid on Return of Content
-					
+
 					var content = "";
 
 					data = {};
-					
+
 					data.action = 'revslider_ajax_call_front';
 					data.client_action = 'get_slider_html';
 					data.token = 'e0e1aa9cef';
 					data.type = obj.type;
 					data.id = obj.id;
 					data.aspectratio = obj.aspectratio;
-					
+
 					// SYNC AJAX REQUEST
 					jQuery.ajax({
 						type:"post",
@@ -85,17 +85,17 @@ img.emoji {
 						async:false,
 						success: function(ret, textStatus, XMLHttpRequest) {
 							if(ret.success == true)
-								content = ret.data;								
+								content = ret.data;
 						},
 						error: function(e) {
 							console.log(e);
 						}
 					});
-					
+
 					 // FIRST RETURN THE CONTENT WHEN IT IS LOADED !!
-					 return content;						 
+					 return content;
 				};
-				
+
 				// CUSTOM AJAX FUNCTION TO REMOVE THE SLIDER
 				var ajaxRemoveRevslider = function(obj) {
 					return jQuery(obj.selector+" .rev_slider").revkill();
@@ -106,7 +106,7 @@ img.emoji {
 					if (jQuery.fn.tpessential != undefined) {
 						clearInterval(extendessential);
 						if(typeof(jQuery.fn.tpessential.defaults) !== 'undefined') {
-							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});   
+							jQuery.fn.tpessential.defaults.ajaxTypes.push({type:"revslider",func:ajaxRevslider,killfunc:ajaxRemoveRevslider,openAnimationSpeed:0.3});
 							// type:  Name of the Post to load via Ajax into the Essential Grid Ajax Container
 							// func: the Function Name which is Called once the Item with the Post Type has been clicked
 							// killfunc: function to kill in case the Ajax Window going to be removed (before Remove function !
@@ -171,23 +171,15 @@ img.emoji {
 <div id="subheader" class="hide-for-small">
 	<div class="row">
 		<div class="small-12 medium-4 columns social">
-																										</div>
+			</div>
 		<div class="small-12 medium-8 columns style2">
 			<nav id="subnav">
 				<ul>
-										<li>
-						<a href="http://www.tigernu.net/checkout/">
-							Checkout						</a>
-					</li>
-										<li>
-						<a href="http://www.tigernu.net/" title="Wishlist"><i class="fa fa-heart-o"></i> Wishlist</a>
-					</li>
-										<li>
-													<a href="http://www.tigernu.net/my-account/">Login</a>
-											</li>
+						<li>
+						<a href="my-account/">Логин</a>
+						</li>
 					<li>
-						<a href="#searchpopup" rel="inline" data-class="searchpopup">
-							Search						</a>
+						<a href="#searchpopup" rel="inline" data-class="searchpopup">Поиск</a>
 					</li>
 				</ul>
 			</nav>
@@ -199,8 +191,8 @@ img.emoji {
 		<div class="small-12 medium-4 columns logo">
 			<div class="row">
 				<div class="small-6 medium-10 columns">
-										
-					<a href="http://www.tigernu.net" class="logolink "><img src="wp-content/uploads/2016/12/Tigernu-logo.png" class="logoimg" alt="Tigernu"/></a>
+
+					<a href="tigernu.net" class="logolink "><img src="wp-content/uploads/2016/12/Tigernu-logo.png" class="logoimg" alt="Tigernu"/></a>
 									</div>
 				<div class="small-6 medium-10 columns show-for-small">
 										<a href="#mobile-toggle" id="mobile-toggle">
@@ -213,12 +205,12 @@ img.emoji {
 			<nav id="nav">
 				<div class="row">
 										  <ul id="menu-navigation-1" class="sf-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-18 current_page_item menu-item-982"><a href="http://www.tigernu.net/">Home</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-984"><a href="http://www.tigernu.net/product-category/backpacks/">Backpacks</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988"><a href="http://www.tigernu.net/product-category/camera-bags/">Camera Bags</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-987"><a href="http://www.tigernu.net/product-category/crossbody-bags/">Shoulder &#038; Crossbody Bags</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-989"><a href="http://www.tigernu.net/product-category/school-bags/">School bags</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-918"><a href="http://www.tigernu.net/about-us/">About Us</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-917"><a href="http://www.tigernu.net/contact-us/">Contact Us</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-984"><a href="http://www.tigernu.net/product-category/backpacks/">Каталог</a></li>
+<!--<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-988"><a href="http://www.tigernu.net/product-category/camera-bags/">Camera Bags</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-987"><a href="http://www.tigernu.net/product-category/crossbody-bags/">Shoulder &#038; Crossbody Bags</a></li>-->
+<!--<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-989"><a href="http://www.tigernu.net/product-category/school-bags/">School bags</a></li> -->
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-918"><a href="http://www.tigernu.net/about-us/">О нас</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-917"><a href="http://www.tigernu.net/contact-us/">Контакты</a></li>
 </ul>									</div>
 			</nav>
 		</div>
@@ -226,7 +218,7 @@ img.emoji {
 </header>
 <!-- End Header -->
 <div id="home-slider">
-	
+
 <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper" style="margin:0px auto;background-color:#E9E9E9;padding:0px;margin-top:0px;margin-bottom:0px;height:350px;width:960px;">
 <!-- START REVOLUTION SLIDER 4.6.5 fixed mode -->
 	<div id="rev_slider_1_1" class="rev_slider" style="display:none;height:350px;width:960px;">
@@ -250,7 +242,7 @@ img.emoji {
 	</li>
 </ul>
 <div class="tp-bannertimer"></div>	</div>
-			
+
 
 			<style scoped></style>
 
@@ -259,7 +251,7 @@ img.emoji {
 				/******************************************
 					-	PREPARE PLACEHOLDER FOR SLIDER	-
 				******************************************/
-				
+
 
 				var setREVStartSize = function() {
 					var	tpopt = new Object();
@@ -286,7 +278,7 @@ img.emoji {
 					revslider_showDoubleJqueryError('#rev_slider_1_1');
 				}else{
 				   revapi1 = tpj('#rev_slider_1_1').show().revolution(
-					{	
+					{
 												dottedOverlay:"none",
 						delay:3500,
 						startwidth:960,
@@ -296,8 +288,8 @@ img.emoji {
 						thumbWidth:100,
 						thumbHeight:50,
 						thumbAmount:3,
-						
-												
+
+
 						simplifyAll:"off",
 
 						navigationType:"bullet",
@@ -311,9 +303,9 @@ img.emoji {
 						swipe_threshold: 75,
 						swipe_min_touches: 1,
 						drag_block_vertical: false,
-						
-												
-												
+
+
+
 						keyboardNavigation:"off",
 
 						navigationHAlign:"center",
@@ -336,18 +328,18 @@ img.emoji {
 						fullScreen:"off",
 
 												spinner:"spinner0",
-												
+
 						stopLoop:"off",
 						stopAfterLoops:-1,
 						stopAtSlide:-1,
 
 						shuffle:"off",
 
-						
-						
-						
-						
-						
+
+
+
+
+
 						hideThumbsOnMobile:"off",
 						hideNavDelayOnMobile:1500,
 						hideBulletsOnMobile:"off",
@@ -375,236 +367,236 @@ img.emoji {
 		    	<div id="" class="row vc_row-fluid "  >
 	<div class="medium-12 small-12  columns ">
 			<aside class="gap cf" style="height:40px;"></aside><aside class="styled_header"><h5>What's Hot</h5><h6>Newest trends</h6><span class="icon"><img src="wp-content/uploads/2014/02/best-sellers.png" alt="Newest trends" /></span></aside>
-	</div> 
+	</div>
 </div><div id="" class="row vc_row-fluid "  >
 	<div class="medium-12 small-12  columns ">
-				   
-		 
+
+
 					<div class="products row four-columns" data-equal="article">
-		
-					
-				
+
+
+
     <article itemscope itemtype="http://schema.org/Product" class="post small-6 medium-4 columns post-1186 product type-product status-publish has-post-thumbnail product_cat-backpacks  instock shipping-taxable product-type-simple">
 
 <a href="http://www.tigernu.net/product/tigernu-backpack-t-b3220-15-dark-grey/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<figure>
-	
-				
+
+
 		<a href="http://www.tigernu.net/product/tigernu-backpack-t-b3220-15-dark-grey/">
-			
-			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3220-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3220-3-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-3-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-3-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-3-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-3.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>			
+
+			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3220-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3220-3-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-3-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-3-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-3-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3220-3.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>
 		</a>
 					<div class="quick-view" data-id="1186"><i class="fa fa-search"></i></div>
 			</figure>
-	
+
 	<div class="post-title">
 		<aside class="post_categories"> <a href="http://www.tigernu.net/product-category/backpacks/" rel="tag">Backpacks</a></aside>		<h3><a href="http://www.tigernu.net/product/tigernu-backpack-t-b3220-15-dark-grey/">Tigernu Backpack T-B3220 15&#8243; Dark Grey</a></h3>
-		
+
 		<div class="shop-buttons">
 			</a>		</div>
 	</div>
 </article><!-- end product -->
-		
-					
-				
+
+
+
     <article itemscope itemtype="http://schema.org/Product" class="post small-6 medium-4 columns post-1185 product type-product status-publish has-post-thumbnail product_cat-backpacks last instock shipping-taxable product-type-simple">
 
 <a href="http://www.tigernu.net/product/tigernu-backpack-t-b3164-17-gray-usb/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<figure>
-	
-				
+
+
 		<a href="http://www.tigernu.net/product/tigernu-backpack-t-b3164-17-gray-usb/">
-			
-			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3164-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3164-2-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-2-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-2-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-2-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-2.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>			
+
+			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3164-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3164-2-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-2-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-2-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-2-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3164-2.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>
 		</a>
 					<div class="quick-view" data-id="1185"><i class="fa fa-search"></i></div>
 			</figure>
-	
+
 	<div class="post-title">
 		<aside class="post_categories"> <a href="http://www.tigernu.net/product-category/backpacks/" rel="tag">Backpacks</a></aside>		<h3><a href="http://www.tigernu.net/product/tigernu-backpack-t-b3164-17-gray-usb/">Tigernu Backpack T-B3164 17&#8243; Gray USB</a></h3>
-		
+
 		<div class="shop-buttons">
 			</a>		</div>
 	</div>
 </article><!-- end product -->
-		
-					
-				
+
+
+
     <article itemscope itemtype="http://schema.org/Product" class="post small-6 medium-4 columns post-1184 product type-product status-publish has-post-thumbnail product_cat-backpacks  instock shipping-taxable product-type-simple">
 
 <a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-gray-usb/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<figure>
-	
-				
+
+
 		<a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-gray-usb/">
-			
-			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-2-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>			
+
+			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-2-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>
 		</a>
 					<div class="quick-view" data-id="1184"><i class="fa fa-search"></i></div>
 			</figure>
-	
+
 	<div class="post-title">
 		<aside class="post_categories"> <a href="http://www.tigernu.net/product-category/backpacks/" rel="tag">Backpacks</a></aside>		<h3><a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-gray-usb/">Tigernu Backpack T-B3142 17&#8243; Black USB</a></h3>
-		
+
 		<div class="shop-buttons">
 			</a>		</div>
 	</div>
 </article><!-- end product -->
-		
-					
-				
+
+
+
     <article itemscope itemtype="http://schema.org/Product" class="post small-6 medium-4 columns post-1183 product type-product status-publish has-post-thumbnail product_cat-backpacks last instock shipping-taxable product-type-simple">
 
 <a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black-usb/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<figure>
-	
-				
+
+
 		<a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black-usb/">
-			
-			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-2-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>			
+
+			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-2-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>
 		</a>
 					<div class="quick-view" data-id="1183"><i class="fa fa-search"></i></div>
 			</figure>
-	
+
 	<div class="post-title">
 		<aside class="post_categories"> <a href="http://www.tigernu.net/product-category/backpacks/" rel="tag">Backpacks</a></aside>		<h3><a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black-usb/">Tigernu Backpack T-B3142 17&#8243; Gray USB</a></h3>
-		
+
 		<div class="shop-buttons">
 			</a>		</div>
 	</div>
 </article><!-- end product -->
-		
-					 
+
+
 		</div>
-		
-			   
-	
-	</div> 
+
+
+
+	</div>
 </div><div id="" class="row vc_row-fluid "  >
 	<div class="medium-12 small-12  columns ">
 			<aside class="gap cf" style="height:15px;"></aside>
-	</div> 
+	</div>
 </div><div id="" class="row vc_row-fluid "  >
 	<div class="medium-12 small-12  columns animation fade-in">
 			<aside class="banner  type4 " style="border-color:; min-height:134px; background: transparent url(wp-content/uploads/2014/02/home-v1.jpg); padding:45px;" ><div class="divcontent"><span style="font-size: 20px; color: #fff;">WORLDWIDE SHIPPING! <strong style="font-weight: 900; color: #fdbc0e;">FOR WHOLESALE SUPPLIERS</strong></span><br />
 <span style="font-size: 12px; color: #b8b8b8;">CONTACT US FOR MORE INFORMATION</span></div><div class="divstyle" style="border-color:;"></div></aside>
-	</div> 
+	</div>
 </div><div id="" class="row vc_row-fluid "  >
 	<div class="medium-12 small-12  columns ">
 			<aside class="gap cf" style="height:40px;"></aside><aside class="styled_header"><h6>Best Sellers</h6><span class="icon"><img src="wp-content/uploads/2014/02/best-sellers-2.png" alt="Best Sellers" /></span></aside>
-	</div> 
+	</div>
 </div><div id="" class="row vc_row-fluid "  >
 	<div class="medium-12 small-12  columns animation fade-in">
-				   
-		 
+
+
 					<div class="products row four-columns" data-equal="article">
-		
-					
-				
+
+
+
     <article itemscope itemtype="http://schema.org/Product" class="post small-6 medium-4 columns post-842 product type-product status-publish has-post-thumbnail product_cat-backpacks  instock shipping-taxable product-type-simple">
 
 <a href="http://www.tigernu.net/product/tigernu-backpack-t-b3029/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<figure>
-	
-				
+
+
 		<a href="http://www.tigernu.net/product/tigernu-backpack-t-b3029/">
-			
-			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2014/07/T-B3029-Black-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-768x768.jpg 768w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-600x600.jpg 600w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2014/07/T-B3029-Black-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-768x768.jpg 768w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-600x600.jpg 600w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></div>			
+
+			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2014/07/T-B3029-Black-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-768x768.jpg 768w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-600x600.jpg 600w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2014/07/T-B3029-Black-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-768x768.jpg 768w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1-600x600.jpg 600w, http://www.tigernu.net/wp-content/uploads/2014/07/T-B3029-Black-1.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></div>
 		</a>
 					<div class="quick-view" data-id="842"><i class="fa fa-search"></i></div>
 			</figure>
-	
+
 	<div class="post-title">
 		<aside class="post_categories"> <a href="http://www.tigernu.net/product-category/backpacks/" rel="tag">Backpacks</a></aside>		<h3><a href="http://www.tigernu.net/product/tigernu-backpack-t-b3029/">Tigernu Backpack T-B3029 15&#8243; Black</a></h3>
-		
+
 		<div class="shop-buttons">
 			</a>		</div>
 	</div>
 </article><!-- end product -->
-		
-					
-				
+
+
+
     <article itemscope itemtype="http://schema.org/Product" class="post small-6 medium-4 columns post-996 product type-product status-publish has-post-thumbnail product_cat-camera-bags last instock shipping-taxable product-type-simple">
 
 <a href="http://www.tigernu.net/product/tigernu-camera-bag-t-c6008/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<figure>
-	
-				
+
+
 		<a href="http://www.tigernu.net/product/tigernu-camera-bag-t-c6008/">
-			
-			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2016/12/T-C6008-300x300.png" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-300x300.png 300w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-150x150.png 150w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-768x768.png 768w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-180x180.png 180w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-600x600.png 600w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008.png 800w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2016/12/T-C6008-1-300x300.png" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-300x300.png 300w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-150x150.png 150w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-768x768.png 768w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-180x180.png 180w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-600x600.png 600w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1.png 800w" sizes="(max-width: 300px) 100vw, 300px" /></div>			
+
+			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2016/12/T-C6008-300x300.png" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-300x300.png 300w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-150x150.png 150w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-768x768.png 768w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-180x180.png 180w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-600x600.png 600w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008.png 800w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2016/12/T-C6008-1-300x300.png" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-300x300.png 300w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-150x150.png 150w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-768x768.png 768w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-180x180.png 180w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1-600x600.png 600w, http://www.tigernu.net/wp-content/uploads/2016/12/T-C6008-1.png 800w" sizes="(max-width: 300px) 100vw, 300px" /></div>
 		</a>
 					<div class="quick-view" data-id="996"><i class="fa fa-search"></i></div>
 			</figure>
-	
+
 	<div class="post-title">
 		<aside class="post_categories"> <a href="http://www.tigernu.net/product-category/camera-bags/" rel="tag">Camera Bags</a></aside>		<h3><a href="http://www.tigernu.net/product/tigernu-camera-bag-t-c6008/">Tigernu Camera Bag T-C6008 Dark Gray</a></h3>
-		
+
 		<div class="shop-buttons">
 			</a>		</div>
 	</div>
 </article><!-- end product -->
-		
-					
-				
+
+
+
     <article itemscope itemtype="http://schema.org/Product" class="post small-6 medium-4 columns post-1175 product type-product status-publish has-post-thumbnail product_cat-backpacks  instock shipping-taxable product-type-simple">
 
 <a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<figure>
-	
-				
+
+
 		<a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black/">
-			
-			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/01/T-B3142-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-768x768.jpg 768w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-600x600.jpg 600w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/01/T-B3142-2-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-768x768.jpg 768w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-600x600.jpg 600w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></div>			
+
+			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/01/T-B3142-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-768x768.jpg 768w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-600x600.jpg 600w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/01/T-B3142-2-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-768x768.jpg 768w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2-600x600.jpg 600w, http://www.tigernu.net/wp-content/uploads/2017/01/T-B3142-2.jpg 800w" sizes="(max-width: 300px) 100vw, 300px" /></div>
 		</a>
 					<div class="quick-view" data-id="1175"><i class="fa fa-search"></i></div>
 			</figure>
-	
+
 	<div class="post-title">
 		<aside class="post_categories"> <a href="http://www.tigernu.net/product-category/backpacks/" rel="tag">Backpacks</a></aside>		<h3><a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black/">Tigernu Backpack T-B3142 17&#8243; Black</a></h3>
-		
+
 		<div class="shop-buttons">
 			</a>		</div>
 	</div>
 </article><!-- end product -->
-		
-					
-				
+
+
+
     <article itemscope itemtype="http://schema.org/Product" class="post small-6 medium-4 columns post-1183 product type-product status-publish has-post-thumbnail product_cat-backpacks last instock shipping-taxable product-type-simple">
 
 <a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black-usb/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<figure>
-	
-				
+
+
 		<a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black-usb/">
-			
-			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-2-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>			
+
+			<div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div><div class="product-image"><img width="300" height="300" src="wp-content/uploads/2017/04/T-B3142GUSB-2-1-300x300.jpg" class="attachment-shop_catalog size-shop_catalog" alt="" srcset="http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-300x300.jpg 300w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-150x150.jpg 150w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1-180x180.jpg 180w, http://www.tigernu.net/wp-content/uploads/2017/04/T-B3142GUSB-2-1.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></div>
 		</a>
 					<div class="quick-view" data-id="1183"><i class="fa fa-search"></i></div>
 			</figure>
-	
+
 	<div class="post-title">
 		<aside class="post_categories"> <a href="http://www.tigernu.net/product-category/backpacks/" rel="tag">Backpacks</a></aside>		<h3><a href="http://www.tigernu.net/product/tigernu-backpack-t-b3142-17-black-usb/">Tigernu Backpack T-B3142 17&#8243; Gray USB</a></h3>
-		
+
 		<div class="shop-buttons">
 			</a>		</div>
 	</div>
 </article><!-- end product -->
-		
-					 
+
+
 		</div>
-		
-			   
-	
-	</div> 
+
+
+
+	</div>
 </div><div id="" class="row vc_row-fluid "  >
 	<div class="medium-12 small-12  columns ">
 			<aside class="gap cf" style="height:15px;"></aside>
-	</div> 
+	</div>
 </div><div id="" class="row vc_row-fluid "  ></div>
 	<div class="medium-6 small-12  columns animation left-to-right">
-			
-	</div> 
+
+	</div>
 <br />
 <img class="alignnone size-full wp-image-1142" src="wp-content/uploads/2014/02/bannerdown.jpg" alt="" width="1170" height="218" srcset="http://www.tigernu.net/wp-content/uploads/2014/02/bannerdown.jpg 1170w, http://www.tigernu.net/wp-content/uploads/2014/02/bannerdown-768x143.jpg 768w" sizes="(max-width: 1170px) 100vw, 1170px" /></p>
 		    </div>
@@ -623,7 +615,7 @@ img.emoji {
 		    <div class="small-12 medium-4 columns">
 		    	<div id="subscribe_widget-2" class="widget cf widget_subscribe_widget">        	<script type="text/javascript">
 			jQuery(document).ready(function($) {
-				$("#newsletter").submit(function() {	
+				$("#newsletter").submit(function() {
 					$('.result').load('http://www.tigernu.net/wp-content/themes/uberstore-wp/inc/subscribe_save.php', {email: $('#widget_subscribe').val()},
 					function() {
 						$(this).fadeIn(200).delay(3000).fadeOut(200);
@@ -632,17 +624,17 @@ img.emoji {
 				});
 			});
 			</script>
-			
-                
-                <div class="title">Newsletter</div>                
+
+
+                <div class="title">Newsletter</div>
                 <p></p>
 
-                <form id="newsletter" action="#" method="post" class="row">   
+                <form id="newsletter" action="#" method="post" class="row">
                 	<div class="small-12 medium-9 columns"><input placeholder="YOUR E-MAIL" type="text" name="widget_subscribe" id="widget_subscribe"></div>
 									<div class="small-12 medium-3 columns"><button type="submit" name="submit" class="btn white">GO</button></div>
                 </form>
                 <div class="result" style="font-size: 12px;"></div>
-		
+
 		</div>		    </div>
 		    <div class="small-12 medium-4 columns">
 		        <div id="woocommerce_product_categories-3" class="widget cf woocommerce widget_product_categories"><div class="title">Product Categories</div><ul class="product-categories"><li class="cat-item cat-item-63"><a href="http://www.tigernu.net/product-category/backpacks/">Backpacks</a></li>
@@ -654,7 +646,7 @@ img.emoji {
 		    	    </div>
 	</footer>
 	<!-- End Footer -->
-		
+
 </div> <!-- End #wrapper -->
 
 <aside id="searchpopup" class="mfp-hide">
